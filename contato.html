@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Grazielle 4655262</title>
+    <style>
+        body{
+            margin: 0;/*Deixa tudo o que aparece na tela sem margem*/
+        }
+        .container{
+            display: grid;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: hsl(287, 90%, 69%);/*cor de fundo*/
+            color: blanchedalmond;/*cor da fonte*/
+            font-size: large;/*fonte grande*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;/*centralizar o texto*/
+            
+        }
+        head{
+            margin: 16px 0;
+            padding: 30px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           justify-content: center;
+        }
+        nav{
+            float:left;/*alinhamento do menu*/
+            
+        }
+        ul{
+            list-style: none;/*tirar os marcadores da lista*/
+            margin: 16px 0;
+            text-align: center;
+            padding: 0;
+           
+        }
+        .link{
+            list-style: none;
+            padding: 8px 16px;
+            color: white;
+            background: hsl(287, 90%, 69%);
+            width: 25%;/*faz com que os 4 menus ocupem 100% da tela*/
+            margin: auto 0 0 auto;
+            border-radius: 16px;
+            justify-content: center;
+        }
+        .img{
+            float: right; /*flutuar a direita*/
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <br>
+        <h1>Quem eu sou...</h1>
+    </header>
+    <nav class="container link">
+        <ul>
+            <li><a href="index.html"></a>Sobre Mim</li>
+        </ul>
+    </nav>
+    <nav class="container link">
+        <ul>
+            <li><a href="formacao.html"></a>Formação</li>
+        </ul>
+    </nav>
+    <nav class="container link">
+        <ul>
+            <li><a href="portifolio.html"></a>Meu Portifólio</li>
+        </ul>
+    </nav>
+    <nav class="container link">
+        <ul>
+            <li><a href="contato.html"></a>Contato</li>
+        </ul>
+    
+    </nav>
+    <br><br><br>
+    <head>
+        <p><strong><h2>Contate-nos</h2></strong></p>
+    </head>
+    <ul>
+        <p>Pelo whatssap (31)98713-3827</p>
+        <p>e nos siga no</p>
+        <li><a href="https://www.instagram.com/graziellepenteados?igsh=aXU1ZDk4dWJjOWRz&utm_source=qr"></a>Meu instagram</li>
+        <p>Você pode também nos enviar uma mensagem:</p>
+    </ul>
+
+    <img class="img" src="qrcode.jpg" alt="QR-code" title="QR Code" width="15%" height="15%">
+    
+    <form action=".php" method="get ou post">
+        <table>
+            <tr>
+                <th><label for="nome">Nome:</label></th>
+                <td><input type="text" name="nome" id="nome"></td>
+            </tr>
+            <tr>
+                <th><label for="email">E-mail:</label></th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <th><label for="msg">Digite sua mensagem:</label></th>
+                <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Enviar</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
